@@ -25,7 +25,7 @@ const onCommentCreated = functions.firestore
     });
 
     comment.comment = commentText;
-    const query = db.collection("badwords");
+    const query = db.collection("profanity");
     const querySnapshot = query.get();
 
     console.log(querySnapshot);
